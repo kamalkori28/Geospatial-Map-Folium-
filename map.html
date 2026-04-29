@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aa559de241dd88b42cce7ef10395c490 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aa559de241dd88b42cce7ef10395c490" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aa559de241dd88b42cce7ef10395c490 = L.map(
+                "map_aa559de241dd88b42cce7ef10395c490",
+                {
+                    center: [23.1815, 79.9864],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b85047b082bca2fc5d4c375fa6a54f26 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b85047b082bca2fc5d4c375fa6a54f26.addTo(map_aa559de241dd88b42cce7ef10395c490);
+        
+    
+            var marker_0b51360fb22801438af71e3fcde838fb = L.marker(
+                [23.1815, 79.9864],
+                {
+}
+            ).addTo(map_aa559de241dd88b42cce7ef10395c490);
+        
+    
+        var popup_93b6652bf7f185c204684744e732a339 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce2bc709afdae147966261237a7f7c4e = $(`<div id="html_ce2bc709afdae147966261237a7f7c4e" style="width: 100.0%; height: 100.0%;">Jabalpur City Center</div>`)[0];
+                popup_93b6652bf7f185c204684744e732a339.setContent(html_ce2bc709afdae147966261237a7f7c4e);
+            
+        
+
+        marker_0b51360fb22801438af71e3fcde838fb.bindPopup(popup_93b6652bf7f185c204684744e732a339)
+        ;
+
+        
+    
+    
+            var marker_1fb3c7b4b72a0b1dc2be0835668d86f1 = L.marker(
+                [23.16, 79.932],
+                {
+}
+            ).addTo(map_aa559de241dd88b42cce7ef10395c490);
+        
+    
+        var popup_2a11d88cb9351638016bb435240f1ce4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_baf1ee7fab61462a1e8438676386925c = $(`<div id="html_baf1ee7fab61462a1e8438676386925c" style="width: 100.0%; height: 100.0%;">Madan Mahal Fort</div>`)[0];
+                popup_2a11d88cb9351638016bb435240f1ce4.setContent(html_baf1ee7fab61462a1e8438676386925c);
+            
+        
+
+        marker_1fb3c7b4b72a0b1dc2be0835668d86f1.bindPopup(popup_2a11d88cb9351638016bb435240f1ce4)
+        ;
+
+        
+    
+    
+            var marker_247899eafeb03c94b811e00a36c7f5cb = L.marker(
+                [23.13, 79.8],
+                {
+}
+            ).addTo(map_aa559de241dd88b42cce7ef10395c490);
+        
+    
+        var popup_c928b391eccbe72f2dabbd6e4b42c57c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00f415bceffb551b99e8771a2aa10008 = $(`<div id="html_00f415bceffb551b99e8771a2aa10008" style="width: 100.0%; height: 100.0%;">Bhedaghat</div>`)[0];
+                popup_c928b391eccbe72f2dabbd6e4b42c57c.setContent(html_00f415bceffb551b99e8771a2aa10008);
+            
+        
+
+        marker_247899eafeb03c94b811e00a36c7f5cb.bindPopup(popup_c928b391eccbe72f2dabbd6e4b42c57c)
+        ;
+
+        
+    
+    
+            var marker_f71dce520c17ba8a8f0863461d3f20d6 = L.marker(
+                [23.19, 80.01],
+                {
+}
+            ).addTo(map_aa559de241dd88b42cce7ef10395c490);
+        
+    
+        var popup_6dcbeb72e4616743ed85b2f9338638cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6f85a1363c147be5526f0d0581c7119 = $(`<div id="html_f6f85a1363c147be5526f0d0581c7119" style="width: 100.0%; height: 100.0%;">Dumna Nature Reserve</div>`)[0];
+                popup_6dcbeb72e4616743ed85b2f9338638cc.setContent(html_f6f85a1363c147be5526f0d0581c7119);
+            
+        
+
+        marker_f71dce520c17ba8a8f0863461d3f20d6.bindPopup(popup_6dcbeb72e4616743ed85b2f9338638cc)
+        ;
+
+        
+    
+    
+            var marker_6869b6e56e6d05cd695b53abdbdef993 = L.marker(
+                [22.95, 79.88],
+                {
+}
+            ).addTo(map_aa559de241dd88b42cce7ef10395c490);
+        
+    
+        var popup_67385dc53e13a9268cf71c0de4ee4914 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bce2da6186b95aff336e5e2ac9da1d24 = $(`<div id="html_bce2da6186b95aff336e5e2ac9da1d24" style="width: 100.0%; height: 100.0%;">Bargi Dam</div>`)[0];
+                popup_67385dc53e13a9268cf71c0de4ee4914.setContent(html_bce2da6186b95aff336e5e2ac9da1d24);
+            
+        
+
+        marker_6869b6e56e6d05cd695b53abdbdef993.bindPopup(popup_67385dc53e13a9268cf71c0de4ee4914)
+        ;
+
+        
+    
+</script>
+</html>
