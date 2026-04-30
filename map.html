@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_aa559de241dd88b42cce7ef10395c490 {
+                #map_d37ba4b9350eef397216ad7acf544c2c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -50,35 +50,40 @@
             </script>
 
         
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_aa559de241dd88b42cce7ef10395c490" ></div>
+            <div class="folium-map" id="map_d37ba4b9350eef397216ad7acf544c2c" ></div>
         
 </body>
 <script>
     
     
-            var map_aa559de241dd88b42cce7ef10395c490 = L.map(
-                "map_aa559de241dd88b42cce7ef10395c490",
+            var map_d37ba4b9350eef397216ad7acf544c2c = L.map(
+                "map_d37ba4b9350eef397216ad7acf544c2c",
                 {
                     center: [23.1815, 79.9864],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 11,
   "zoomControl": true,
-  "preferCanvas": false,
+  "preferCanvas": true,
 }
 
                 }
             );
+            L.control.scale().addTo(map_d37ba4b9350eef397216ad7acf544c2c);
 
             
 
         
     
-            var tile_layer_b85047b082bca2fc5d4c375fa6a54f26 = L.tileLayer(
+            var tile_layer_e928cceb73a281050d6e400681298d4a = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,127 +100,546 @@
             );
         
     
-            tile_layer_b85047b082bca2fc5d4c375fa6a54f26.addTo(map_aa559de241dd88b42cce7ef10395c490);
+            tile_layer_e928cceb73a281050d6e400681298d4a.addTo(map_d37ba4b9350eef397216ad7acf544c2c);
         
     
-            var marker_0b51360fb22801438af71e3fcde838fb = L.marker(
+            var tile_layer_3931c4ed003f3a350d80f92eafccebe6 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3931c4ed003f3a350d80f92eafccebe6.addTo(map_d37ba4b9350eef397216ad7acf544c2c);
+        
+    
+            var feature_group_609e6a6f05e0c9ae7492ad4665a012bb = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_a25ada6648e19918439bfd60e4c5ebd1 = L.markerClusterGroup(
+                {
+  "chunkedLoading": true,
+  "disableClusteringAtZoom": 15,
+  "maxClusterRadius": 50,
+}
+            );
+        
+    
+            var marker_af434519e66191b1b33bb572a0573a4a = L.marker(
                 [23.1815, 79.9864],
                 {
 }
-            ).addTo(map_aa559de241dd88b42cce7ef10395c490);
+            ).addTo(marker_cluster_a25ada6648e19918439bfd60e4c5ebd1);
         
     
-        var popup_93b6652bf7f185c204684744e732a339 = L.popup({
-  "maxWidth": "100%",
+            var icon_4011565058fa6fe1026569069c70f537 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5d75f4287ccb193d83cf48c12af45b2 = L.popup({
+  "maxWidth": 320,
 });
 
         
             
-                var html_ce2bc709afdae147966261237a7f7c4e = $(`<div id="html_ce2bc709afdae147966261237a7f7c4e" style="width: 100.0%; height: 100.0%;">Jabalpur City Center</div>`)[0];
-                popup_93b6652bf7f185c204684744e732a339.setContent(html_ce2bc709afdae147966261237a7f7c4e);
+                var html_6f4373ca551f441bc654d77b6e213c28 = $(`<div id="html_6f4373ca551f441bc654d77b6e213c28" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Jabalpur City Center<br><strong>Coordinates:</strong> 23.18150, 79.98640<br><strong>Category:</strong> City Hub<br><strong>Info:</strong> Administrative and commercial center of Jabalpur</div>`)[0];
+                popup_f5d75f4287ccb193d83cf48c12af45b2.setContent(html_6f4373ca551f441bc654d77b6e213c28);
             
         
 
-        marker_0b51360fb22801438af71e3fcde838fb.bindPopup(popup_93b6652bf7f185c204684744e732a339)
+        marker_af434519e66191b1b33bb572a0573a4a.bindPopup(popup_f5d75f4287ccb193d83cf48c12af45b2)
         ;
 
         
     
     
-            var marker_1fb3c7b4b72a0b1dc2be0835668d86f1 = L.marker(
+                marker_af434519e66191b1b33bb572a0573a4a.setIcon(icon_4011565058fa6fe1026569069c70f537);
+            
+    
+            var marker_9b32c7b97c9c902bbd162a03ca9e44dc = L.marker(
                 [23.16, 79.932],
                 {
 }
-            ).addTo(map_aa559de241dd88b42cce7ef10395c490);
+            ).addTo(marker_cluster_a25ada6648e19918439bfd60e4c5ebd1);
         
     
-        var popup_2a11d88cb9351638016bb435240f1ce4 = L.popup({
-  "maxWidth": "100%",
+            var icon_d1e954cc55e73777db1e4abbecdba4e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8777d59383fe0d1ada9be617dc26f850 = L.popup({
+  "maxWidth": 320,
 });
 
         
             
-                var html_baf1ee7fab61462a1e8438676386925c = $(`<div id="html_baf1ee7fab61462a1e8438676386925c" style="width: 100.0%; height: 100.0%;">Madan Mahal Fort</div>`)[0];
-                popup_2a11d88cb9351638016bb435240f1ce4.setContent(html_baf1ee7fab61462a1e8438676386925c);
+                var html_f8a9fdf580671c803fa3688d9aedd651 = $(`<div id="html_f8a9fdf580671c803fa3688d9aedd651" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Madan Mahal Fort<br><strong>Coordinates:</strong> 23.16000, 79.93200<br><strong>Category:</strong> Heritage<br><strong>Info:</strong> Historic hilltop fort associated with Rani Durgavati</div>`)[0];
+                popup_8777d59383fe0d1ada9be617dc26f850.setContent(html_f8a9fdf580671c803fa3688d9aedd651);
             
         
 
-        marker_1fb3c7b4b72a0b1dc2be0835668d86f1.bindPopup(popup_2a11d88cb9351638016bb435240f1ce4)
+        marker_9b32c7b97c9c902bbd162a03ca9e44dc.bindPopup(popup_8777d59383fe0d1ada9be617dc26f850)
         ;
 
         
     
     
-            var marker_247899eafeb03c94b811e00a36c7f5cb = L.marker(
-                [23.13, 79.8],
+                marker_9b32c7b97c9c902bbd162a03ca9e44dc.setIcon(icon_d1e954cc55e73777db1e4abbecdba4e0);
+            
+    
+            var marker_e246a46f1fe3a9f59721130677cafc35 = L.marker(
+                [23.1283, 79.7952],
                 {
 }
-            ).addTo(map_aa559de241dd88b42cce7ef10395c490);
+            ).addTo(marker_cluster_a25ada6648e19918439bfd60e4c5ebd1);
         
     
-        var popup_c928b391eccbe72f2dabbd6e4b42c57c = L.popup({
-  "maxWidth": "100%",
+            var icon_ee39f555dd980267674c34747e72624a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72904303e6409279c6dad98f102593c2 = L.popup({
+  "maxWidth": 320,
 });
 
         
             
-                var html_00f415bceffb551b99e8771a2aa10008 = $(`<div id="html_00f415bceffb551b99e8771a2aa10008" style="width: 100.0%; height: 100.0%;">Bhedaghat</div>`)[0];
-                popup_c928b391eccbe72f2dabbd6e4b42c57c.setContent(html_00f415bceffb551b99e8771a2aa10008);
+                var html_e7121961241e51f1a692b86169bde705 = $(`<div id="html_e7121961241e51f1a692b86169bde705" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Bhedaghat Marble Rocks<br><strong>Coordinates:</strong> 23.12830, 79.79520<br><strong>Category:</strong> Nature<br><strong>Info:</strong> Famous marble gorge on the Narmada River</div>`)[0];
+                popup_72904303e6409279c6dad98f102593c2.setContent(html_e7121961241e51f1a692b86169bde705);
             
         
 
-        marker_247899eafeb03c94b811e00a36c7f5cb.bindPopup(popup_c928b391eccbe72f2dabbd6e4b42c57c)
+        marker_e246a46f1fe3a9f59721130677cafc35.bindPopup(popup_72904303e6409279c6dad98f102593c2)
         ;
 
         
     
     
-            var marker_f71dce520c17ba8a8f0863461d3f20d6 = L.marker(
+                marker_e246a46f1fe3a9f59721130677cafc35.setIcon(icon_ee39f555dd980267674c34747e72624a);
+            
+    
+            var marker_c54d612d640bd72e7e06ed4abbdb0440 = L.marker(
+                [23.1222, 79.801],
+                {
+}
+            ).addTo(marker_cluster_a25ada6648e19918439bfd60e4c5ebd1);
+        
+    
+            var icon_3bfcb4e4bfc7ef6b0e0460b68787580a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ca5d984e771772e6583dc5de55a834d = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a9c9a7486629e6338d78969e7d64b333 = $(`<div id="html_a9c9a7486629e6338d78969e7d64b333" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Dhuandhar Falls<br><strong>Coordinates:</strong> 23.12220, 79.80100<br><strong>Category:</strong> Nature<br><strong>Info:</strong> Popular waterfall and viewpoint near Bhedaghat</div>`)[0];
+                popup_5ca5d984e771772e6583dc5de55a834d.setContent(html_a9c9a7486629e6338d78969e7d64b333);
+            
+        
+
+        marker_c54d612d640bd72e7e06ed4abbdb0440.bindPopup(popup_5ca5d984e771772e6583dc5de55a834d)
+        ;
+
+        
+    
+    
+                marker_c54d612d640bd72e7e06ed4abbdb0440.setIcon(icon_3bfcb4e4bfc7ef6b0e0460b68787580a);
+            
+    
+            var marker_df68d8e76c352c7c28a7a39e47414236 = L.marker(
+                [23.1708, 79.9315],
+                {
+}
+            ).addTo(marker_cluster_a25ada6648e19918439bfd60e4c5ebd1);
+        
+    
+            var icon_bec415c2ad3804c543b2600d213cdbd2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4fc88e205f67b37b07885a73505f6db7 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_250040c6663c0fcd756dc3cdbc8662a0 = $(`<div id="html_250040c6663c0fcd756dc3cdbc8662a0" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Rani Durgavati Museum<br><strong>Coordinates:</strong> 23.17080, 79.93150<br><strong>Category:</strong> Museum<br><strong>Info:</strong> Local museum featuring archaeology and regional history</div>`)[0];
+                popup_4fc88e205f67b37b07885a73505f6db7.setContent(html_250040c6663c0fcd756dc3cdbc8662a0);
+            
+        
+
+        marker_df68d8e76c352c7c28a7a39e47414236.bindPopup(popup_4fc88e205f67b37b07885a73505f6db7)
+        ;
+
+        
+    
+    
+                marker_df68d8e76c352c7c28a7a39e47414236.setIcon(icon_bec415c2ad3804c543b2600d213cdbd2);
+            
+    
+            var marker_52924f09e15722a7c242a4c4b59dc5b9 = L.marker(
                 [23.19, 80.01],
                 {
 }
-            ).addTo(map_aa559de241dd88b42cce7ef10395c490);
+            ).addTo(marker_cluster_a25ada6648e19918439bfd60e4c5ebd1);
         
     
-        var popup_6dcbeb72e4616743ed85b2f9338638cc = L.popup({
-  "maxWidth": "100%",
+            var icon_1dbcd5a965f99bc821ff94c284d31f0a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb2fc1e887c091586197b05f738b822a = L.popup({
+  "maxWidth": 320,
 });
 
         
             
-                var html_f6f85a1363c147be5526f0d0581c7119 = $(`<div id="html_f6f85a1363c147be5526f0d0581c7119" style="width: 100.0%; height: 100.0%;">Dumna Nature Reserve</div>`)[0];
-                popup_6dcbeb72e4616743ed85b2f9338638cc.setContent(html_f6f85a1363c147be5526f0d0581c7119);
+                var html_8249b6d7030a2a197afbb883dd9282a7 = $(`<div id="html_8249b6d7030a2a197afbb883dd9282a7" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Dumna Nature Reserve<br><strong>Coordinates:</strong> 23.19000, 80.01000<br><strong>Category:</strong> Nature<br><strong>Info:</strong> Protected forest area known for birdwatching and walking trails</div>`)[0];
+                popup_bb2fc1e887c091586197b05f738b822a.setContent(html_8249b6d7030a2a197afbb883dd9282a7);
             
         
 
-        marker_f71dce520c17ba8a8f0863461d3f20d6.bindPopup(popup_6dcbeb72e4616743ed85b2f9338638cc)
+        marker_52924f09e15722a7c242a4c4b59dc5b9.bindPopup(popup_bb2fc1e887c091586197b05f738b822a)
         ;
 
         
     
     
-            var marker_6869b6e56e6d05cd695b53abdbdef993 = L.marker(
-                [22.95, 79.88],
+                marker_52924f09e15722a7c242a4c4b59dc5b9.setIcon(icon_1dbcd5a965f99bc821ff94c284d31f0a);
+            
+    
+            var marker_9006177d85ec25d201f0630bd8781da3 = L.marker(
+                [22.948, 79.883],
                 {
 }
-            ).addTo(map_aa559de241dd88b42cce7ef10395c490);
+            ).addTo(marker_cluster_a25ada6648e19918439bfd60e4c5ebd1);
         
     
-        var popup_67385dc53e13a9268cf71c0de4ee4914 = L.popup({
-  "maxWidth": "100%",
+            var icon_efc3f30100cd63413d68be8116ec2c95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f38ce3ecbed528f053d69bd0b9164da1 = L.popup({
+  "maxWidth": 320,
 });
 
         
             
-                var html_bce2da6186b95aff336e5e2ac9da1d24 = $(`<div id="html_bce2da6186b95aff336e5e2ac9da1d24" style="width: 100.0%; height: 100.0%;">Bargi Dam</div>`)[0];
-                popup_67385dc53e13a9268cf71c0de4ee4914.setContent(html_bce2da6186b95aff336e5e2ac9da1d24);
+                var html_b48178bb4dfdd46a7bc05466da51a356 = $(`<div id="html_b48178bb4dfdd46a7bc05466da51a356" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Bargi Dam<br><strong>Coordinates:</strong> 22.94800, 79.88300<br><strong>Category:</strong> Waterfront<br><strong>Info:</strong> Reservoir and boating destination south of the city</div>`)[0];
+                popup_f38ce3ecbed528f053d69bd0b9164da1.setContent(html_b48178bb4dfdd46a7bc05466da51a356);
             
         
 
-        marker_6869b6e56e6d05cd695b53abdbdef993.bindPopup(popup_67385dc53e13a9268cf71c0de4ee4914)
+        marker_9006177d85ec25d201f0630bd8781da3.bindPopup(popup_f38ce3ecbed528f053d69bd0b9164da1)
         ;
 
         
     
+    
+                marker_9006177d85ec25d201f0630bd8781da3.setIcon(icon_efc3f30100cd63413d68be8116ec2c95);
+            
+    
+            var marker_386eccbf841997c3af1bfcd330438371 = L.marker(
+                [23.1678, 79.9506],
+                {
+}
+            ).addTo(marker_cluster_a25ada6648e19918439bfd60e4c5ebd1);
+        
+    
+            var icon_218889dd45680665513a3ba2de02f096 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_817b0032e3d8004aae76194c4f4f4871 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_1780799210e49f73813bea0929d2c191 = $(`<div id="html_1780799210e49f73813bea0929d2c191" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Jabalpur Junction Railway Station<br><strong>Coordinates:</strong> 23.16780, 79.95060<br><strong>Category:</strong> Transport<br><strong>Info:</strong> Major railway station connecting Jabalpur to nearby cities</div>`)[0];
+                popup_817b0032e3d8004aae76194c4f4f4871.setContent(html_1780799210e49f73813bea0929d2c191);
+            
+        
+
+        marker_386eccbf841997c3af1bfcd330438371.bindPopup(popup_817b0032e3d8004aae76194c4f4f4871)
+        ;
+
+        
+    
+    
+                marker_386eccbf841997c3af1bfcd330438371.setIcon(icon_218889dd45680665513a3ba2de02f096);
+            
+    
+            var marker_063a2a797f2b328039784406748330c9 = L.marker(
+                [23.0941, 79.9513],
+                {
+}
+            ).addTo(marker_cluster_a25ada6648e19918439bfd60e4c5ebd1);
+        
+    
+            var icon_ef9b9092026b035b8e5945d205b40cb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71527fc738affb35d24897b07928b380 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_12f0deb7ced2290ad888a594abc8433d = $(`<div id="html_12f0deb7ced2290ad888a594abc8433d" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Tilwara Ghat<br><strong>Coordinates:</strong> 23.09410, 79.95130<br><strong>Category:</strong> Spiritual<br><strong>Info:</strong> Historic riverside ghat with memorial significance</div>`)[0];
+                popup_71527fc738affb35d24897b07928b380.setContent(html_12f0deb7ced2290ad888a594abc8433d);
+            
+        
+
+        marker_063a2a797f2b328039784406748330c9.bindPopup(popup_71527fc738affb35d24897b07928b380)
+        ;
+
+        
+    
+    
+                marker_063a2a797f2b328039784406748330c9.setIcon(icon_ef9b9092026b035b8e5945d205b40cb0);
+            
+    
+            var marker_d987b721c43bd38067f12e16bf52a700 = L.marker(
+                [23.21, 79.947],
+                {
+}
+            ).addTo(marker_cluster_a25ada6648e19918439bfd60e4c5ebd1);
+        
+    
+            var icon_3e6c819461c92526bcdada4d9124f14c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4147aff9339e19550fb13b5c126f52de = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_5940a5a44fc05296426bf12c34e0f957 = $(`<div id="html_5940a5a44fc05296426bf12c34e0f957" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Pisanhari Ki Madiya<br><strong>Coordinates:</strong> 23.21000, 79.94700<br><strong>Category:</strong> Spiritual<br><strong>Info:</strong> Jain pilgrimage site on a hill overlooking the city</div>`)[0];
+                popup_4147aff9339e19550fb13b5c126f52de.setContent(html_5940a5a44fc05296426bf12c34e0f957);
+            
+        
+
+        marker_d987b721c43bd38067f12e16bf52a700.bindPopup(popup_4147aff9339e19550fb13b5c126f52de)
+        ;
+
+        
+    
+    
+                marker_d987b721c43bd38067f12e16bf52a700.setIcon(icon_3e6c819461c92526bcdada4d9124f14c);
+            
+    
+            var marker_f856acef32f6cbc9e795f3f878428ac8 = L.marker(
+                [23.1522, 79.9418],
+                {
+}
+            ).addTo(marker_cluster_a25ada6648e19918439bfd60e4c5ebd1);
+        
+    
+            var icon_db6bcac405cdbfe2de338e86bd2dafd1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4425160b4c4bf50b4cca910bc92fc26 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_fc6b606fe3861286d2c556395e0dd24b = $(`<div id="html_fc6b606fe3861286d2c556395e0dd24b" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Gwarighat<br><strong>Coordinates:</strong> 23.15220, 79.94180<br><strong>Category:</strong> Spiritual<br><strong>Info:</strong> Riverside ghat known for evening aarti and boat rides</div>`)[0];
+                popup_c4425160b4c4bf50b4cca910bc92fc26.setContent(html_fc6b606fe3861286d2c556395e0dd24b);
+            
+        
+
+        marker_f856acef32f6cbc9e795f3f878428ac8.bindPopup(popup_c4425160b4c4bf50b4cca910bc92fc26)
+        ;
+
+        
+    
+    
+                marker_f856acef32f6cbc9e795f3f878428ac8.setIcon(icon_db6bcac405cdbfe2de338e86bd2dafd1);
+            
+    
+            var marker_2fd116ce9af15048a05f79d6b54ddbdd = L.marker(
+                [23.1755, 80.0245],
+                {
+}
+            ).addTo(marker_cluster_a25ada6648e19918439bfd60e4c5ebd1);
+        
+    
+            var icon_d960de948af432e7b253f0aa8845bbee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35c7ab1e3777516e880692ef6534fb66 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_33aca798427738c27165f808d1dd66b4 = $(`<div id="html_33aca798427738c27165f808d1dd66b4" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> IIITDM Jabalpur<br><strong>Coordinates:</strong> 23.17550, 80.02450<br><strong>Category:</strong> Education<br><strong>Info:</strong> Engineering institute on the eastern side of the city</div>`)[0];
+                popup_35c7ab1e3777516e880692ef6534fb66.setContent(html_33aca798427738c27165f808d1dd66b4);
+            
+        
+
+        marker_2fd116ce9af15048a05f79d6b54ddbdd.bindPopup(popup_35c7ab1e3777516e880692ef6534fb66)
+        ;
+
+        
+    
+    
+                marker_2fd116ce9af15048a05f79d6b54ddbdd.setIcon(icon_d960de948af432e7b253f0aa8845bbee);
+            
+    
+            marker_cluster_a25ada6648e19918439bfd60e4c5ebd1.addTo(feature_group_609e6a6f05e0c9ae7492ad4665a012bb);
+        
+    
+            feature_group_609e6a6f05e0c9ae7492ad4665a012bb.addTo(map_d37ba4b9350eef397216ad7acf544c2c);
+        
+    
+            var feature_group_d5032d4e2bc5c21046ec814ecd26121d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var heat_map_ec5438472cb2549bdd6399eaaae148fb = L.heatLayer(
+                [[23.1815, 79.9864], [23.16, 79.932], [23.1283, 79.7952], [23.1222, 79.801], [23.1708, 79.9315], [23.19, 80.01], [22.948, 79.883], [23.1678, 79.9506], [23.0941, 79.9513], [23.21, 79.947], [23.1522, 79.9418], [23.1755, 80.0245]],
+                {
+  "minOpacity": 0.35,
+  "maxZoom": 18,
+  "radius": 18,
+  "blur": 14,
+}
+            );
+        
+    
+            heat_map_ec5438472cb2549bdd6399eaaae148fb.addTo(feature_group_d5032d4e2bc5c21046ec814ecd26121d);
+        
+    
+            var layer_control_35f1fd1a264014d9e8b2b7a6e2f99302_layers = {
+                base_layers : {
+                    "OpenStreetMap" : tile_layer_e928cceb73a281050d6e400681298d4a,
+                    "Light Map" : tile_layer_3931c4ed003f3a350d80f92eafccebe6,
+                },
+                overlays :  {
+                    "Markers" : feature_group_609e6a6f05e0c9ae7492ad4665a012bb,
+                    "Heatmap" : feature_group_d5032d4e2bc5c21046ec814ecd26121d,
+                },
+            };
+            let layer_control_35f1fd1a264014d9e8b2b7a6e2f99302 = L.control.layers(
+                layer_control_35f1fd1a264014d9e8b2b7a6e2f99302_layers.base_layers,
+                layer_control_35f1fd1a264014d9e8b2b7a6e2f99302_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_d37ba4b9350eef397216ad7acf544c2c);
+
+        
 </script>
 </html>

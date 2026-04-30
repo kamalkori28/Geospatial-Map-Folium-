@@ -1,6 +1,13 @@
-name,latitude,longitude
-Jabalpur City Center,23.1815,79.9864
-Madan Mahal Fort,23.1600,79.9320
-Bhedaghat,23.1300,79.8000
-Dumna Nature Reserve,23.1900,80.0100
-Bargi Dam,22.9500,79.8800
+Name,Latitude,Longitude,Category,Info,Icon,MarkerColor
+Jabalpur City Center,23.1815,79.9864,City Hub,Administrative and commercial center of Jabalpur,building,blue
+Madan Mahal Fort,23.1600,79.9320,Heritage,Historic hilltop fort associated with Rani Durgavati,university,red
+Bhedaghat Marble Rocks,23.1283,79.7952,Nature,Famous marble gorge on the Narmada River,leaf,green
+Dhuandhar Falls,23.1222,79.8010,Nature,Popular waterfall and viewpoint near Bhedaghat,tint,green
+Rani Durgavati Museum,23.1708,79.9315,Museum,Local museum featuring archaeology and regional history,camera,orange
+Dumna Nature Reserve,23.1900,80.0100,Nature,Protected forest area known for birdwatching and walking trails,leaf,darkgreen
+Bargi Dam,22.9480,79.8830,Waterfront,Reservoir and boating destination south of the city,ship,cadetblue
+Jabalpur Junction Railway Station,23.1678,79.9506,Transport,Major railway station connecting Jabalpur to nearby cities,train,darkblue
+Tilwara Ghat,23.0941,79.9513,Spiritual,Historic riverside ghat with memorial significance,star,purple
+Pisanhari Ki Madiya,23.2100,79.9470,Spiritual,Jain pilgrimage site on a hill overlooking the city,star,purple
+Gwarighat,23.1522,79.9418,Spiritual,Riverside ghat known for evening aarti and boat rides,star,purple
+IIITDM Jabalpur,23.1755,80.0245,Education,Engineering institute on the eastern side of the city,graduation-cap,darkgreen
