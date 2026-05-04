@@ -1,40 +1,86 @@
-# Jabalpur Folium GIS Map
+<h1 align="center">🗺️ Jabalpur Folium GIS Map</h1>
 
-This project reads location data from a CSV file and creates an interactive Folium map using a single Python file: `main.py`.
+<p align="center">
+  📍 An interactive geospatial visualization project using <strong>Folium</strong> and <strong>Python</strong>.
+</p>
 
-## Features
+<p align="center">
+  This project demonstrates how to create dynamic maps from CSV-based location data with clustering and heatmap layers.
+</p>
 
-- Reads `Name`, `Latitude`, and `Longitude` from `locations.csv`
-- Centers the map on Jabalpur, India
-- Groups nearby points with `MarkerCluster`
-- Adds a heatmap layer using `HeatMap`
-- Adds `LayerControl` to toggle marker and heatmap layers
-- Uses clean popups that show the location name and coordinates
-- Supports optional marker color and icon variation for richer maps
-- Uses a structure that stays beginner-friendly while scaling better for larger datasets
+---
 
-## Optional CSV columns
+## 🚀 Live Overview
 
-The script also supports these optional columns when available:
+✨ This project:
 
-- `Category`
-- `Info`
-- `Icon`
-- `MarkerColor`
+* Loads location data from a CSV file  
+* Generates an interactive map centered on Jabalpur  
+* Visualizes data using markers, clusters, and heatmaps  
 
-## How to run
+---
 
-1. Install Python
-2. Install the required packages:
+## 🛠️ Tech Stack
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+**Core Technologies:**
 
-3. Run the script:
+* 🐍 Python 3.10+  
+* 🗺️ Folium  
+* 🔥 Folium Plugins (MarkerCluster, HeatMap)  
 
-   ```bash
-   python main.py
-   ```
+---
 
-4. Open `map.html` in a browser
+## ✨ Features
+
+✅ Load location data from `locations.csv`  
+✅ Interactive map centered on Jabalpur, India  
+✅ Marker clustering using `MarkerCluster`  
+✅ Heatmap visualization with `HeatMap`  
+✅ Toggle layers using `LayerControl`  
+✅ Clean popups with name and coordinates  
+✅ Optional marker customization (color, icon)  
+✅ Scalable structure for larger datasets  
+
+---
+
+## 📦 Requirements
+
+Make sure you have the following installed:
+
+* Python 3.10 or higher  
+* Required Python libraries (Folium and dependencies)  
+
+---
+
+## ⚙️ Setup
+
+Install dependencies using:
+
+```bash
+py -m pip install -r requirements.txt
+
+
+## ▶️ Run the Project
+
+```bash
+py main.py
+
+
+📊 Output
+
+When you run the script, it will:
+
+📥 Load location data from a CSV file
+📍 Generate an interactive map
+🔥 Display clustered markers and a heatmap layer
+🌐 Save the output as map.html
+
+---
+
+ 📁 Project Structure
+.
+├── main.py
+├── locations.csv
+├── requirements.txt
+└── README.md
+
